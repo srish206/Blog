@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	$(document).on('click','.like-cls',function(){
+		debugger
+		$.ajax({
+		    url:"/like-post", 
+		    success:function() {
+				debugger
+				// $(this).toggleClass("heart-cls")
+    		}
+  		});
+
+	});
+</script>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{% block features %}
+    <h5 style="margin-top: 10px;"><strong>{{ post.title }}</strong></h5>
+    {% if not current_post_like %}
+        <a href="{% url 'like_post' bug.id %}">Vote</a>
+    {% endif %}
+    {{ bug.vote }}
+{% endblock %}
+</body>
+</html> -->
+
+
+
+

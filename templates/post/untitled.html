@@ -1,0 +1,46 @@
+
+obj = Post.objects.get(id=id)
+	if obj.like < 1:
+		obj.like +=1
+		obj.save()
+		PostLike.objects.create(user=request.user,post=obj)
+	else:
+		return HttpResponse("jsdfsdjf")
+	return redirect(publish_post)
+
+
+
+
+
+
+# liked_post = i.user.post_set.all()
+			# for k in i.user.post_set.all():
+				# if k!=post:
+			# if post not in i.user.post_set.all() == True:
+			# import pdb;pdb.set_trace()
+			# for j in post_list:	
+
+
+
+# def like_post(request,id):
+# 	post = Post.objects.get(id=id)	
+	# current_post_like=post.postlike_set.filter(user=request.user).exists()
+# 	if request.user.is_authenticated:
+# 		post.like += 1	
+# 		PostLike.objects.create(user=request.user,post=post)
+# 		post.save()
+# 		return HttpResponse("like")
+# 	return redirect(publish_post)
+
+
+
+
+
+
+
+
+
+
+
+# use select_related and prefetch related
+#explore Generic Relations in django
