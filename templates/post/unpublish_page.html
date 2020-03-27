@@ -1,11 +1,14 @@
+{% extends "index.html" %}
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
 </head>
 <body>
-	<h3>Unpublish post</h3>
-	{% for pub in unpublish_data %}
-		<li>{{ pub }}</li>
-	{% endfor %}
+	{% block content %}
+		<h3>Unpublish post</h3>
+		{% for pub in unpublish_data %}
+			<li>{{ pub }}</li>
+		{% endfor %}
+	{% endblock %}
 </html>
